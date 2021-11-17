@@ -287,6 +287,19 @@ public class HelperMethod {
 			// TODO: handle exception
 		}
 	}
+	public void switchToFrame(int index) {
+		driver.switchTo().frame(index);
+	}
+	public void switchToFrame(String index) {
+		driver.switchTo().frame(index);
+	}
+	public void switchToFrame(By by) {
+		driver.switchTo().frame(driver.findElement(by));
+	}
+	
+	public void defaultcontent() {
+		driver.switchTo().defaultContent();
+	}
 
 
 }
