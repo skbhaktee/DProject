@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="redifftest.TC_1">
+      <class name="redifftest.POM_TC_1">
         <methods>
-          <include name="f"/>
+          <include name="f" invocation-numbers="1 2"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- redifftest.TC_1 -->
+      </class> <!-- redifftest.POM_TC_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

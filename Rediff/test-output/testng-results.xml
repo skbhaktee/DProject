@@ -1,35 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101826" started-at="2021-11-17T14:36:46Z" finished-at="2021-11-17T14:38:28Z">
+  <suite name="Default suite" duration-ms="458944" started-at="2021-11-19T13:53:27Z" finished-at="2021-11-19T14:01:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101826" started-at="2021-11-17T14:36:46Z" finished-at="2021-11-17T14:38:28Z">
-      <class name="redifftest.TC_1">
-        <test-method status="FAIL" signature="f()[pri:0, instance:redifftest.TC_1@553f17c]" name="f" duration-ms="101624" started-at="2021-11-17T14:36:46Z" finished-at="2021-11-17T14:38:28Z">
+    <test name="Default test" duration-ms="458944" started-at="2021-11-19T13:53:27Z" finished-at="2021-11-19T14:01:06Z">
+      <class name="redifftest.POM_TC_1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:redifftest.POM_TC_1@490ab905]" name="beforeTest" is-config="true" duration-ms="83592" started-at="2021-11-19T13:53:27Z" finished-at="2021-11-19T13:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f(java.util.HashMap)[pri:0, instance:redifftest.POM_TC_1@490ab905]" name="f" duration-ms="128258" started-at="2021-11-19T13:55:29Z" data-provider="dp" finished-at="2021-11-19T13:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{message=1. Hey, Hey man, or Hi and Greeting a stranger
+You can use “hey” and “hi” to greet someone instead of “hello”. Both are particularly popular among younger people. While “hi” is appropriate to use in any casual situation, “hey” is for people who have already met. If you say “hey” to a stranger, it might be confusing for that person because he or she will try to remember when you met before! You can also add “man” to the end of “hey” when greeting males. Some people also use “hey man” to casually greet younger women, but only do this if you know the woman very well. Remember that “hey” doesn’t always mean “hello”. “Hey” can also be used to call for someone’s attention., subject=First  email, email=omkarbhosale932@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.util.HashMap)[pri:0, instance:redifftest.POM_TC_1@490ab905]" name="f" duration-ms="94710" started-at="2021-11-19T13:57:37Z" data-provider="dp" finished-at="2021-11-19T13:59:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{message=1. Hey, Hey man, or Hi and Greeting a stranger
+You can use “hey” and “hi” to greet someone instead of “hello”. Both are particularly popular among younger people. While “hi” is appropriate to use in any casual situation, “hey” is for people who have already met. If you say “hey” to a stranger, it might be confusing for that person because he or she will try to remember when you met before! You can also add “man” to the end of “hey” when greeting males. Some people also use “hey man” to casually greet younger women, but only do this if you know the woman very well. Remember that “hey” doesn’t always mean “hello”. “Hey” can also be used to call for someone’s attention., subject=First  email, email=ujjwalakhekade@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='cke_1_contents']/iframe"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='rd_inp_sub rd_subject_datacmp2']"}
   (Session info: chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAKYESH-PC', ip: '192.168.43.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'RAKYESH-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:14171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e874f13e837f4dae81760cd84768703
-*** Element info: {Using=xpath, value=//*[@id='cke_1_contents']/iframe}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:12402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2894a41aa0e12b06933eaf27ad52e3c
+*** Element info: {Using=xpath, value=//input[@class='rd_inp_sub rd_subject_datacmp2']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='cke_1_contents']/iframe"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='rd_inp_sub rd_subject_datacmp2']"}
   (Session info: chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAKYESH-PC', ip: '192.168.43.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'RAKYESH-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:14171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e874f13e837f4dae81760cd84768703
-*** Element info: {Using=xpath, value=//*[@id='cke_1_contents']/iframe}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:12402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2894a41aa0e12b06933eaf27ad52e3c
+*** Element info: {Using=xpath, value=//input[@class='rd_inp_sub rd_subject_datacmp2']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -44,9 +68,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at util.HelperMethod.switchToFrame(HelperMethod.java:297)
-at pages.Mail.composeMail(Mail.java:34)
-at redifftest.TC_1.f(TC_1.java:43)
+at pompages.Mail_Pom.composeMail(Mail_Pom.java:40)
+at redifftest.POM_TC_1.f(POM_TC_1.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -78,7 +101,85 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- redifftest.TC_1 -->
+        <test-method status="FAIL" signature="f(java.util.HashMap)[pri:0, instance:redifftest.POM_TC_1@490ab905]" name="f" duration-ms="113656" started-at="2021-11-19T13:59:13Z" data-provider="dp" finished-at="2021-11-19T14:01:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{message=1. Hey, Hey man, or Hi and Greeting a stranger
+You can use “hey” and “hi” to greet someone instead of “hello”. Both are particularly popular among younger people. While “hi” is appropriate to use in any casual situation, “hey” is for people who have already met. If you say “hey” to a stranger, it might be confusing for that person because he or she will try to remember when you met before! You can also add “man” to the end of “hey” when greeting males. Some people also use “hey man” to casually greet younger women, but only do this if you know the woman very well. Remember that “hey” doesn’t always mean “hello”. “Hey” can also be used to call for someone’s attention., subject=First  email, email=meghakpatel20@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='cke_1_contents']/iframe"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RAKYESH-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:12402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2894a41aa0e12b06933eaf27ad52e3c
+*** Element info: {Using=xpath, value=//*[@id='cke_1_contents']/iframe}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='cke_1_contents']/iframe"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RAKYESH-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\rakyesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:12402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2894a41aa0e12b06933eaf27ad52e3c
+*** Element info: {Using=xpath, value=//*[@id='cke_1_contents']/iframe}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pompages.Mail_Pom.composeMail(Mail_Pom.java:43)
+at redifftest.POM_TC_1.f(POM_TC_1.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- redifftest.POM_TC_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
