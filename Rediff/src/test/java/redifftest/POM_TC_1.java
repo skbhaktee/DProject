@@ -9,6 +9,7 @@ import pompages.Mail_Pom;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 
 import org.apache.poi.ss.usermodel.CellType;
@@ -21,8 +22,11 @@ import org.testng.annotations.BeforeTest;
 public class POM_TC_1 {
 	WebDriver driver;
 	Mail_Pom mp;
+	Login_Pom lp;
   @Test(dataProvider = "dp")
   public void f(HashMap<String, String> map) {
+	  
+	 
 	  
 	  try {
 		mp.composeMail(map.get("email"), map.get("subject"), map.get("message"));
@@ -65,13 +69,20 @@ public class POM_TC_1 {
 
 		return obj;
   }
+  
   @BeforeTest
-  public void beforeTest() {
+  public void beforeTest() throws InterruptedException {
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
+	  
 	  driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 	  Login_Pom lp=new Login_Pom(driver);
-	  lp.doLoginAs("your user", "password");
+	  
+	  Thread.sleep(6000);
+	  
+	  System.out.println(" I am here.....................");
+	  
+	  lp.doLoginAs("rth143", "rock12");
 	  mp=new Mail_Pom(driver);
   }
 

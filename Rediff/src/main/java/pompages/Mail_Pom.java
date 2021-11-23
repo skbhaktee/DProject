@@ -25,7 +25,7 @@ public class Mail_Pom {
 		
 		
 		driver.findElement(writemail).click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		for(int i=0;i<10;i++) {
 			if(driver.findElement(emailname).isDisplayed()) {
 				driver.findElement(emailname).sendKeys(emailto);
@@ -36,16 +36,16 @@ public class Mail_Pom {
 			}
 		
 		}
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		driver.findElement(subject).sendKeys(subj);
-		Thread.sleep(10000);
+		
 		
 		driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='cke_1_contents']/iframe")));
 		driver.findElement(compose).sendKeys(mailbody);
-		Thread.sleep(10000);
+	//	Thread.sleep(10000);
 		
 		driver.switchTo().defaultContent();
-		Thread.sleep(10000);
+	//	Thread.sleep(10000);
 
 		driver.findElement(send).click();
 		
